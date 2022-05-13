@@ -1,8 +1,5 @@
-const Header = require('./components/Header')
-
-function Main(){
-  return <main className="whiteFrame"></main>
-}
+const Header = require('./components/Header');
+const Main = require('./components/Main');
 
 function App() {
   return (    
