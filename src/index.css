@@ -131,3 +131,56 @@ body{
       text-align: center;
       color: #FFFFFF;
     }
+.CardsContainer {
+  width: 1206px;
+  height: 476px;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-around;
+  padding-top: 59px;
+  row-gap: 10px;
+}
+  .Card {    
+    width: 327px;
+    height: 183px;
+    background: #FFFFFF;
+    border-radius: 18px;
+    text-align: center;
+
+    border: 1px solid black;
+  }
+    .data{      
+      width: 300px;
+      height: 63px;            
+      font-style: normal;
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 55px;
+      color: #D2D2D2;
+      margin: 0;
+      display: inline-block;
+    }
+    .local {
+      display: inline-block;
+      width: 300px;
+      height: 63px;
+      font-style: normal;      
+      font-weight:100;
+      font-size: 26px;
+      line-height: 44px;
+      color: #D2D2D2;
+      margin: 0;      
+    }
+    .Compromisso {
+      width: 224px;
+      height: 63px;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 26px;
+      line-height: 44px;
+      color: #0ACD86;
+      margin: 0;
+    }
