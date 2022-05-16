@@ -9,9 +9,9 @@ function Header(){
         <Logo />
         <div className="Amor">
           <Button text='Início' />
-          <Button text='Produtos' />
-          <Button text='Sobre nós' />
-          <Button text='Promoções' />
+          <Button text='Diário' />
+          <Button text='Mensal' />
+          <Button text='Anual' />
         </div>
         <UserIcon />
       </div>
