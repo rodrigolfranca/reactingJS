@@ -148,9 +148,7 @@ body{
     height: 183px;
     background: #FFFFFF;
     border-radius: 18px;
-    text-align: center;
-
-    border: 1px solid black;
+    text-align: center;    
   }
     .data{      
       width: 300px;

@@ -8,10 +8,10 @@ function Header(){
       <div className="headerContainer">
         <Logo />
         <div className="Amor">
-          <Button text='Home' />
-          <Button text='Products' />
-          <Button text='About Us' />
-          <Button text='Promotions' />
+          <Button text='Início' />
+          <Button text='Produtos' />
+          <Button text='Sobre nós' />
+          <Button text='Promoções' />
         </div>
         <UserIcon />
       </div>
