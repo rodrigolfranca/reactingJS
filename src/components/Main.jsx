@@ -5,11 +5,15 @@ import AddButton from "./AddButton";
 function Main(){
     return (
         <main className="whiteFrame">
-            <TextInput />
-            <TextInput />
-            <TextInput />
-            <AddButton />
-            <AddButton />
+            <div className="inputs">
+                <TextInput placeHolder="Descrição" />
+                <TextInput placeHolder="Data" />
+                <TextInput placeHolder="Local" />
+            </div>
+            <div className="botoes">
+                <AddButton text='Adcionar' />
+                <AddButton text='Limpar' />
+            </div>
         </main>
     )
 }

@@ -1,5 +1,5 @@
-const AddButton = () => {
-    return <button className="AddButton"></ button>;
+const AddButton = (props) => {
+    return <button className="AddButton">{props.text}</ button>;
 }
 
 export default AddButton;

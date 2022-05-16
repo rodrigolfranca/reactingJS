@@ -69,8 +69,65 @@ body{
       height: 57px;
     }
 .whiteFrame{
-  margin: 45px auto;  
+  margin: 45px auto;
   width: 1206px;
-  height: 605px;
+  height: 212px;
+  background-color:#F2F2F2;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  align-content: center;  
+  column-gap: 30px;
 }
+  .inputs {
+    width: 740px;
+    height: 110px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+    align-content: space-between;
+  }    
+    .TextInput:first-child {
+      width: 740px;
+      height: 41px;
+    }
+    .TextInput {
+      width: 340px;
+      height: 41px;
+      border-radius: 17px;
+      padding-left: 23px;
+      font-size: 23px;
+      line-height: 32px;
+      color:#D2D2D2;
+
+      border:none;      
+    }
+  .botoes {
+    width: 282px;
+    height: 200px;
+
+    height: 110px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+    .AddButton:first-child {
+      background-color: #0AAB6B;
+    }
+    .AddButton {
+      background-color: #E1B84F;
+      width: 282px;
+      height: 41px;
+      border-radius: 17px;
+
+      border:none;
+      font-size: 23px;
+      line-height: 32px;
+      text-align: center;
+      color: #FFFFFF;
+    }
