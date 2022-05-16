@@ -1,11 +1,13 @@
-const Header = require('./components/Header');
-const Main = require('./components/Main');
+import Header from "./components/Header";
+import Main from "./components/Main";
+import CardsContainer from "./components/CardsContainer";
 
 function App() {
   return (    
     <>
-      <Header />
-      <Main />    
+      <Header />      
+      <Main />
+      <CardsContainer />
     </>
   );
 }

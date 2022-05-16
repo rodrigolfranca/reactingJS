@@ -1,14 +1,20 @@
-const button = require('./Button')
+import Button from "./Button";
+import Logo from "./Logo";
+import UserIcon from "./UserIcon";
 
 function Header(){
-    return <header className="header">
-              <ul>
-                <li>{button('BTN1')}</li>
-                <li>{button('BTN2')}</li>
-                <li>{button('BTN3')}</li>
-                <li>{button('BTN4')}</li>              
-              </ul>
-            </header>
+    return (      
+    <header className="header">
+      <div className="headerContainer">
+        <Logo />
+        <Button text='Home' />
+        <Button text='Products' />
+        <Button text='About Us' />
+        <Button text='Promotions' />
+        <UserIcon />
+      </div>
+    </header>
+    )           
 }
 
-module.exports = Header;
+export default Header;

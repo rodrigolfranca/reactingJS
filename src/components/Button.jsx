@@ -1,5 +1,7 @@
-function button(text) {
-    return <button className="button">{text}</button>
+import React from 'react';
+
+const Button = (props) => {
+    return <button className="button">{props.text}</button>
 }
 
-module.exports = button;
+export default Button;
