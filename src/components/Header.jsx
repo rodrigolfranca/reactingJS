@@ -7,10 +7,12 @@ function Header(){
     <header className="header">
       <div className="headerContainer">
         <Logo />
-        <Button text='Home' />
-        <Button text='Products' />
-        <Button text='About Us' />
-        <Button text='Promotions' />
+        <div className="Amor">
+          <Button text='Home' />
+          <Button text='Products' />
+          <Button text='About Us' />
+          <Button text='Promotions' />
+        </div>
         <UserIcon />
       </div>
     </header>

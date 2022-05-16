@@ -15,39 +15,61 @@ body{
   height: 63px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
   width: 100%;
   background-color: #0ACD86;
 }
-  .header ul{
-      margin:0 auto;
-      font-size: 23px;
-      color: #0ACD86;
-      width: 750px;
-      display: flex; 
+  .headerContainer {
+    width: 1440px;
+    height: 63px;
+    
+    background-color: #0ACD86;
+  }
+    .Logo {
+      width: 120px;
+      height: 61px;
+      display: inline-block;
+
+      background-color: #0AAB6B;      
+    }
+    .Amor {
+      display:inline-flex;
+      height: 63px;
+      width: 1240px;
+      padding-left: 20px;
+      column-gap: 60px;
+
       align-items: center;
-      justify-content: space-between;
-      list-style: none;
-  }  
-        .button{
-          border: 0;
-          background-color: #0ACD86;
-          color: #0AAB6B;
-          width: 150px;
-          height: 40px;
-          border-radius: 50px;
-          font-size: 23px;
+      justify-content: flex-start;
+      align-content: center;      
+
+      vertical-align:top;
+    }
+    .button{
+      border: 0;
+      background-color: #0ACD86;
+      color: #0AAB6B;
+      width: 150px;
+      height: 40px;
+      border-radius: 50px;
+      font-size: 23px;
+    }
+      .button:hover{
+        background-color: #eeeeee;
+        transform: scale(110%);
+        color: #0AAB6B;
+        transition: 0.5s;
+        cursor: pointer;
       }
-          .button:hover{
-              background-color: #eeeeee;
-              transform: scale(110%);
-              color: #0AAB6B;
-              transition: 0.5s;
-              cursor: pointer;
-          }
+    .userIcon {
+      vertical-align:top;
+      width: 57px;
+      height: 57px;
+    }
 .whiteFrame{
-  margin: 160px auto;
-  display: flex;
+  margin: 45px auto;  
   width: 1206px;
   height: 605px;
   justify-content: center;
