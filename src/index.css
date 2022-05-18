@@ -129,11 +129,12 @@ body{
       font-size: 23px;
       line-height: 32px;
       text-align: center;
-      color: #FFFFFF;
+      color: #FFFFFF;      
     }
-    .addButton:hover {
+    .AddButton:hover {
       background-color: #1e1e1e;
       color: #efefef;
+      cursor: pointer;
     }
 .CardsContainer {
   width: 1206px;

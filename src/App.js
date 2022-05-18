@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
-import CardsContainer from "./components/CardsContainer";
 import React, { useState } from "react";
 
 function App() {
@@ -37,8 +36,7 @@ function clearInput(){
   return (    
     <>   
       <Header />      
-      <Main description={description} setDescription={setDescription} local={local} setLocal={setLocal} data={data} setData={setData} cards={cards} setCards={setCards} clearInput={clearInput} getData={getData} />
-      <CardsContainer description={description} local={local} data={data} cards={cards} />
+      <Main description={description} setDescription={setDescription} local={local} setLocal={setLocal} data={data} setData={setData} cards={cards} setCards={setCards} clearInput={clearInput} getData={getData} />      
     </>
   );
 }
