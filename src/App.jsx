@@ -9,8 +9,7 @@ function App() {
   const [local, setLocal]= useState("");
   const [cards, setCards]= useState([]);
 
-  function getData() {
-    console.log("Demonio Satanás");
+  function getData() {    
     //getting input data
     const inputCard = {
         description: description,
@@ -21,14 +20,13 @@ function App() {
     //handling cards array
     const nowCards = cards;
     nowCards.push(inputCard);
-    setCards(nowCards);
+    setCards(nowCards);   
 
     //cleaning out
     clearInput();
   }
 
-function clearInput(){
-  console.log("Evento do caralho, aparece filho da puta!");
+function clearInput(){  
   setDescription("")
   setData("")
   setLocal("")
