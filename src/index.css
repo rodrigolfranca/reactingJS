@@ -131,6 +131,10 @@ body{
       text-align: center;
       color: #FFFFFF;
     }
+    .addButton:hover {
+      background-color: #1e1e1e;
+      color: #efefef;
+    }
 .CardsContainer {
   width: 1206px;
   height: 476px;

@@ -1,14 +1,16 @@
 import React from 'react';
 import Card from './Card';
 
-const CardsContainer = () => {
+const CardsContainer = (props) => {
+
     return (
-        <div className="CardsContainer">
-            <Card data="24.03.2022" local="Fortaleza - CE" appointment="Encontro com o Alpha" />
-            <Card data="24.03.2022" local="Fortaleza - CE" appointment="Reunião DM" />
-            <Card data="24.03.2022" local="Fortaleza - CE" appointment="Aula Faculdade" />
+
+        <div className="CardsContainer">            
+            { props.cards.map(element => { return (<Card data={element.data} local={element.local} description={element.description} />) } ) }
         </div>
+
     );
+
 }
 
 export default CardsContainer;
