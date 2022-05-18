@@ -3,31 +3,7 @@ import TextInput from "./TextInput";
 import AddButton from "./AddButton";
 
 
-function Main(props){
-
-    function getData() {
-        //getting input data
-        const inputCard = {
-            description: props.description,
-            data: props.data,
-            local: props.local
-        }
-
-        //handling cards array
-        const nowCards = props.cards;
-        nowCards.push(inputCard);
-        props.setCards(nowCards);
-
-        //cleaning out
-        clearInput();
-    }
-
-    function clearInput(){
-        props.setDescription("")
-        props.setData("")
-        props.setLocal("")
-    }
-    
+function Main(props){    
     return (
         <main className="whiteFrame">
             <div className="inputs">
@@ -36,8 +12,8 @@ function Main(props){
                 <TextInput placeHolder="Local" value={props.local} onInput={(event) => props.setLocal(event.target.value)}/>
             </div>
             <div className="botoes">
-                <AddButton text='Adcionar' onClick={getData} />
-                <AddButton text='Limpar' onClick={clearInput} />
+                <AddButton text='Adcionar' onClick={props.getData} />
+                <AddButton text='Limpar' onClick={props.clearInput} />
             </div>
         </main>
     )

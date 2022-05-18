@@ -10,10 +10,34 @@ function App() {
   const [local, setLocal]= useState("");
   const [cards, setCards]= useState([]);
 
+  function getData() {
+    console.log("Demonio Satanás");
+    //getting input data
+    const inputCard = {
+        description: description,
+        data: data,
+        local: local
+    }
+
+    //handling cards array
+    const nowCards = cards;
+    nowCards.push(inputCard);
+    setCards(nowCards);
+
+    //cleaning out
+    clearInput();
+  }
+
+function clearInput(){
+    setDescription("")
+    setData("")
+    setLocal("")
+  }
+
   return (    
     <>   
       <Header />      
-      <Main description={description} setDescription={setDescription} local={local} setLocal={setLocal} data={data} setData={setData} cards={cards} setCards={setCards} />
+      <Main description={description} setDescription={setDescription} local={local} setLocal={setLocal} data={data} setData={setData} cards={cards} setCards={setCards} clearInput={clearInput} getData={getData} />
       <CardsContainer description={description} local={local} data={data} cards={cards} />
     </>
   );
