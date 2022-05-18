@@ -28,15 +28,26 @@ function App() {
   }
 
 function clearInput(){
-    setDescription("")
-    setData("")
-    setLocal("")
-  }
+  console.log("Evento do caralho, aparece filho da puta!");
+  setDescription("")
+  setData("")
+  setLocal("")
+}
 
   return (    
     <>   
       <Header />      
-      <Main description={description} setDescription={setDescription} local={local} setLocal={setLocal} data={data} setData={setData} cards={cards} setCards={setCards} clearInput={clearInput} getData={getData} />      
+      <Main
+        description={description}
+        setDescription={setDescription}
+        local={local}
+        setLocal={setLocal}
+        data={data}
+        setData={setData}
+        cards={cards}
+        setCards={setCards}
+        clearInput={clearInput}
+        getData={getData} />      
     </>
   );
 }
